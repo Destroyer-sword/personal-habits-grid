@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #425986;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* Custom horizontal scrollbar for mobile touch containers */
+.mobile-scrollbar::-webkit-scrollbar {
+  height: 6px; /* Horizontal scrollbar thickness */
+}
+
+.mobile-scrollbar::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6); /* Dark background matching sky/slate themes */
+  border-radius: 9999px;
+}
+
+.mobile-scrollbar::-webkit-scrollbar-thumb {
+  background: #38bdf8; /* sky-400 thumb accent */
+  border-radius: 9999px;
+}
+
+.mobile-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #0ea5e9; /* sky-500 hover state */
+}
+
+/* Firefox support */
+.mobile-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #38bdf8 rgba(15, 23, 42, 0.6);
 }
